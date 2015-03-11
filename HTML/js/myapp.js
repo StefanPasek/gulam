@@ -24,6 +24,12 @@ myApp.config( function($routeProvider) {
 		.when('/searchresults', {
 			templateUrl: 'pages/searchresults.html'
 		})
+		.when('/praxissuche', {
+			templateUrl: 'pages/praxissuche.html'
+		})
+		.when('/zahnarztsuche', {
+			templateUrl: 'pages/zahnarztsuche.html'
+		})
 		.otherwise( { redirectTo: '/startseite' })
 });
 

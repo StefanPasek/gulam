@@ -34,6 +34,8 @@
     <!-- login page -->
     <link rel="stylesheet" href="assets/css/pages/page_log_reg_v1.css">
     <link rel="stylesheet" href="assets/css/pages/page_search_inner.css">
+    <!-- forms -->
+    <link rel="stylesheet" href="assets/plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css">
 </head> 
 
 <body ng-app="myApp">
@@ -99,9 +101,9 @@
                                 Zahnärzte
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="blog_page.html">Praxen</a></li>
-                                <li><a href="blog_large.html">Zahnärzte</a></li>
-                                <li><a href="blog_medium.html">Regionen</a></li>
+                                <li><a href="#/praxissuche">Praxen</a></li>
+                                <li><a href="#/zahnarztsuche">Zahnärzte</a></li>
+                                <!-- <li><a href="blog_medium.html">Regionen</a></li> -->
                             
                             </ul>
                         </li>
@@ -291,6 +293,7 @@
 <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+<script src="assets/plugins/sky-forms/version-2.0.1/js/jquery-ui.min.js"></script>
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="assets/plugins/jquery.parallax.js"></script>
@@ -298,13 +301,16 @@
 <script type="text/javascript" src="assets/plugins/image-hover/js/touch.js"></script>
 <!-- JS Customization -->
 <script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/plugins/form-sliders.js"></script>
+
 
 <!-- JS Page Level -->           
 <script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
         App.init();
-        App.initParallaxBg();      
+        App.initParallaxBg(); 
+        FormSliders.initFormSliders();      
     });
 </script>
 <!--[if lt IE 9]>
